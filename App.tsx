@@ -2,8 +2,8 @@ import * as React from 'react';
 import './style.scss';
 import logo from './img/logo.svg';
 import cart from './img/cart.svg';
-import user from './img/user.svg'
-
+import user from './img/user.svg';
+import btnplus from './img/btn-plus.svg';
 
 export default function App() {
   return (
@@ -22,24 +22,22 @@ export default function App() {
             <span>1205 руб.</span>
           </li>
           <li>
-          <img src={user} width={18} height={18} />
+            <img src={user} width={18} height={18} />
           </li>
         </ul>
       </header>
       <div className="content p-40">
         <h1>Все кроссовки</h1>
         <div className="Card">
-        <img src="" alt=""/>
+          <img src="./img/sneakers/1.jpg" alt="" width={130} height={122}/>
           <p></p>
-          <div>
-            <div>
-              <span>
-                Цена
-              </span>
+          <div className="d-flex justify-between">
+            <div className="d-flex flex-column">
+              <p>Цена</p>
               <b>12999 р</b>
             </div>
             <button>
-              <img src={user} width={11} height={11} />
+              <img src={btnplus} width={11} height={11} />
             </button>
           </div>
         </div>
