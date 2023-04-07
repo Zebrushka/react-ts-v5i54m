@@ -30,7 +30,7 @@ export default function App() {
         <h1 className="mb-40">Все кроссовки</h1>
         <div className="d-flex">
           <div className="card">
-            <img width={133} height={122} src='' />
+            <img width={133} height={122} src={'./public/img/sneakers/1.jpg'} />
             <h5>Кроссовки мужские Nike</h5>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
@@ -43,7 +43,7 @@ export default function App() {
             </div>
           </div>
           <div className="card">
-            <img width={133} height={122} src="/img/sneakers/1.jpg" />
+            <img width={133} height={122} src="./img/sneakers/1.jpg" />
             <h5>Кроссовки мужские Nike</h5>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
