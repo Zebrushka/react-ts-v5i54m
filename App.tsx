@@ -27,18 +27,33 @@ export default function App() {
         </ul>
       </header>
       <div className="content p-40">
-        <h1>Все кроссовки</h1>
-        <div className="Card">
-          <img src="./img/sneakers/1.jpg" alt="" width={130} height={122}/>
-          <p></p>
-          <div className="d-flex justify-between">
-            <div className="d-flex flex-column">
-              <p>Цена</p>
-              <b>12999 р</b>
+        <h1 className="mb-40">Все кроссовки</h1>
+        <div className="d-flex">
+          <div className="card">
+            <img width={133} height={122} src='' />
+            <h5>Кроссовки мужские Nike</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12999 р</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src={btnplus} />
+              </button>
             </div>
-            <button>
-              <img src={btnplus} width={11} height={11} />
-            </button>
+          </div>
+          <div className="card">
+            <img width={133} height={122} src="/img/sneakers/1.jpg" />
+            <h5>Кроссовки мужские Nike</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12999 р</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src={btnplus} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
