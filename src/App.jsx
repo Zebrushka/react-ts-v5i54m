@@ -1,9 +1,9 @@
 import * as React from 'react';
 import './style.scss';
-import logo from './public/img/logo.svg';
-import cart from './public/img/cart.svg';
-import user from './public/img/user.svg';
-import btnplus from './public/img/btn-plus.svg';
+import logo from './img/logo.svg';
+import cart from './img/cart.svg';
+import user from './img/user.svg';
+import btnplus from './img/btn-plus.svg';
 
 export default function App() {
   return (
