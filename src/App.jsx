@@ -1,10 +1,12 @@
 import * as React from 'react';
 import './style.scss';
+
 import logo from './img/logo.svg';
 import cart from './img/cart.svg';
 import user from './img/user.svg';
 import btnplus from './img/btn-plus.svg';
 import search from './img/search.svg'
+import unliked from './img/unliked.svg'
 import one from './img/sneakers/1.jpg';
 
 
@@ -39,37 +41,12 @@ export default function App() {
         </div>
         <div className="d-flex">
           <div className="card">
+            <img src={unliked} alt="unliked" />
             <img
               width={133}
               height={122}
               src={one}
             />
-            <h5>Кроссовки мужские Nike</h5>
-            <div className="d-flex justify-between align-center">
-              <div className="d-flex flex-column">
-                <span>Цена:</span>
-                <b>12999 р</b>
-              </div>
-              <button className="button">
-                <img width={11} height={11} src={btnplus} />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={133} height={122} src="./img/sneakers/1.jpg" alt='image'/>
-            <h5>Кроссовки мужские Nike</h5>
-            <div className="d-flex justify-between align-center">
-              <div className="d-flex flex-column">
-                <span>Цена:</span>
-                <b>12999 р</b>
-              </div>
-              <button className="button">
-                <img width={11} height={11} src={btnplus} />
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <img width={133} height={122} src="./img/sneakers/1.jpg" />
             <h5>Кроссовки мужские Nike</h5>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
