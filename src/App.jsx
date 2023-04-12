@@ -4,6 +4,9 @@ import logo from './img/logo.svg';
 import cart from './img/cart.svg';
 import user from './img/user.svg';
 import btnplus from './img/btn-plus.svg';
+import search from './img/search.svg'
+import one from './img/sneakers/1.jpg';
+
 
 export default function App() {
   return (
@@ -13,7 +16,7 @@ export default function App() {
           <img src={logo} width={40} height={40} />
           <div>
             <h3 className="text-uppercase">React Sneakers</h3>
-            <p>Магазин лучших кросовок</p>
+            <p className="opacity-5">Магазин лучших кроссовок</p>
           </div>
         </div>
         <ul className="d-flex">
@@ -27,14 +30,33 @@ export default function App() {
         </ul>
       </header>
       <div className="content p-40">
-        <h1 className="mb-40">Все кроссовки</h1>
+        <div className='d-flex align-center mb-40 justify-between'>
+          <h1>Все кроссовки</h1>
+          <div className='search-block'>
+            <img src={search} alt="search" />
+            <input placeholder='Поиск' type="text" />
+          </div>
+        </div>
         <div className="d-flex">
           <div className="card">
             <img
               width={133}
               height={122}
-              src="../public/img/sneakers/1.jpg"
+              src={one}
             />
+            <h5>Кроссовки мужские Nike</h5>
+            <div className="d-flex justify-between align-center">
+              <div className="d-flex flex-column">
+                <span>Цена:</span>
+                <b>12999 р</b>
+              </div>
+              <button className="button">
+                <img width={11} height={11} src={btnplus} />
+              </button>
+            </div>
+          </div>
+          <div className="card">
+            <img width={133} height={122} src="./img/sneakers/1.jpg" alt='image'/>
             <h5>Кроссовки мужские Nike</h5>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
