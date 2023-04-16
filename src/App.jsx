@@ -13,7 +13,18 @@ export default function App() {
   return (
     <div className="wrapper clear">
       <div className="overlay">
-        <div className="drawer"></div>
+        <div className="drawer">
+          <h2>Корзина</h2>
+          <div className="cartItem">
+            <img src={one} alt="Кроссщвки" />
+            <div>
+              <p>Мужские кроссовки Nike Air Max 270</p>
+            </div>
+            <div>
+              <b>12 999 руб</b>
+            </div>
+          </div>
+        </div>
       </div>
       <header className="d-flex justify-between align-center p-40">
         <div className="d-flex align-center">
