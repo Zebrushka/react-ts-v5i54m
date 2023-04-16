@@ -1,3 +1,3 @@
 # react-ts-v5i54m
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-v5i54m)
+[Deployed on Firebase ⚡️](https://ikigai-c1567.web.app)

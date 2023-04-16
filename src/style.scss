@@ -117,6 +117,18 @@ header {
 }
 
 .cartItem {
+  
+  border: 1px solid #f3f3f3;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .cartItemImg{
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-position: center;
+  }
+
   p {
     font-size: 16;
   }
@@ -127,6 +139,8 @@ header {
     opacity: 0.5;
     &:hover {
       opacity: 1;
-    } 
+      cursor: pointer;
+      transition: opacity 0.2s ease-in-out;
+    }
   }
 }
