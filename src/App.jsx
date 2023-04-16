@@ -8,6 +8,7 @@ import btnplus from "./img/btn-plus.svg";
 import search from "./img/search.svg";
 import unliked from "./img/unliked.svg";
 import one from "./img/sneakers/1.jpg";
+import btnremove from "./img/btn-remove.svg";
 
 export default function App() {
   return (
@@ -15,14 +16,19 @@ export default function App() {
       <div className="overlay">
         <div className="drawer">
           <h2>Корзина</h2>
-          <div className="cartItem">
-            <img src={one} alt="Кроссщвки" />
-            <div>
-              <p>Мужские кроссовки Nike Air Max 270</p>
-            </div>
-            <div>
+          <div className="cartItem d-flex align-center">
+            <img
+              src={one}
+              width={70}
+              height={70}
+              alt="Кроссовки"
+              className="mr-20"
+            />
+            <div className="mr-20">
+              <p className="mb-5">Мужские кроссовки Nike Air Max 270</p>
               <b>12 999 руб</b>
             </div>
+            <img className="removeBtn" src={btnremove} width={40} height={40} alt="Remove item" />
           </div>
         </div>
       </div>
@@ -58,7 +64,7 @@ export default function App() {
           <div className="card">
             <img src={unliked} alt="unliked" />
             <img width={133} height={122} src={one} />
-            <h5>Кроссовки мужские Nike</h5>
+            <h5>Мужские кроссовки Nike Air Max 270</h5>
             <div className="d-flex justify-between align-center">
               <div className="d-flex flex-column">
                 <span>Цена:</span>
