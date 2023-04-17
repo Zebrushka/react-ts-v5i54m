@@ -6,23 +6,43 @@ export default function App() {
     <div className="wrapper clear">
       <div className="overlay">
         <div className="drawer">
-          <h2>Корзина</h2>
-          <div className="cartItem d-flex align-center">
-            <div
-              style={{ backgroundImage: "url(./img/sneakers/1.jpg)" }}
-              className="cartItemImg"
-            ></div>
-            <div className="mr-20">
-              <p className="mb-5">Мужские кроссовки Nike Air Max 270</p>
-              <b>12 999 руб</b>
+          <h2 className="mb-30">Корзина</h2>
+          <div className="items">
+            <div className="cartItem d-flex align-center mb-20">
+              <div
+                style={{
+                  backgroundImage:
+                    "url(https://raw.githubusercontent.com/Archakov06/react-sneakers/master/public/img/sneakers/1.jpg)",
+                }}
+                className="cartItemImg"
+              ></div>
+              <div className="mr-20 flex">
+                <p className="mb-5">Мужские кроссовки Nike Air Max 270</p>
+                <b>12 999 руб</b>
+              </div>
+              <img
+                className="removeBtn"
+                src="/img/btn-remove.svg"
+                width={40}
+                height={40}
+                alt="Remove item"
+              />
             </div>
-            <img
-              className="removeBtn"
-              src="/img/btn-remove.svg"
-              width={40}
-              height={40}
-              alt="Remove item"
-            />
+          </div>
+          <div className="cartTotalBlock">
+            <ul>
+              <li>
+                <span>Итого:</span>
+                <div></div>
+                <b>21 498 руб.</b>
+              </li>
+              <li>
+                <span>Налог 5%:</span>
+                <div></div>
+                <b>1074 руб.</b>
+              </li>
+            </ul>
+            <button>Оформить заказ</button>
           </div>
         </div>
       </div>
@@ -61,7 +81,7 @@ export default function App() {
               width={133}
               height={122}
               title="my-img"
-              src="img/sneakers/1.jpg"
+              src="https://raw.githubusercontent.com/Archakov06/react-sneakers/master/public/img/sneakers/1.jpg"
               alt="my-img"
             />
             <h5>Мужские кроссовки Nike Air Max 270</h5>
