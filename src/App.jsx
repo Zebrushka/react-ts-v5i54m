@@ -6,7 +6,16 @@ export default function App() {
     <div className="wrapper clear">
       <div className="overlay">
         <div className="drawer">
-          <h2 className="mb-30">Корзина</h2>
+          <h2 className="d-flex justify-between mb-30">
+            Корзина{" "}
+            <img
+              className="cu-p"
+              src="/img/btn-remove.svg"
+              width={40}
+              height={40}
+              alt="Remove item"
+            />
+          </h2>
           <div className="items">
             <div className="cartItem d-flex align-center mb-20">
               <div
@@ -42,7 +51,7 @@ export default function App() {
                 <b>1074 руб.</b>
               </li>
             </ul>
-            <button>Оформить заказ</button>
+            <button className="greenButton">Оформить заказ</button>
           </div>
         </div>
       </div>
